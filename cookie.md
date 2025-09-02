@@ -20,3 +20,38 @@ if username:
     else:
         greeting += 'you are not admin'
     return render_template('index.html', text=greeting)
+```
+---
+Key Points:
+
+The web app does not use sessions or a database.
+
+Instead, it checks the value of a cookie named username.
+
+If username == "admin", the flag is revealed.
+
+## Exploitation
+
+Start the challenge instance and open the given URL.
+
+Open Developer Tools (F12) → go to the Console tab..
+
+Change the value of username from guest to admin.
+
+Run:
+
+```
+document.cookie = "username=admin; path=/";
+```
+
+Refresh the page.
+
+The server now treats you as admin and displays the flag.
+
+Solution:
+
+After modifying the cookie, the page showed:
+
+Hello admin, flag is DH{...}
+
+---
