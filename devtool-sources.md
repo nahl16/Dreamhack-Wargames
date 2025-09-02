@@ -27,3 +27,20 @@ Example:
 /* some CSS styling */
 ...
 /* DH{example_fake_flag_here} */
+
+```
+Solution:
+
+The flag was obtained directly from the CSS file, without any interaction with the webpage.
+
+Flag: DH{...}
+
+Takeaway:
+
+DevTools is extremely powerful for frontend analysis.
+
+Sensitive information should never be stored in static frontend files (JavaScript, CSS, or HTML), as users can always read them.
+
+Always enforce proper security by keeping secrets server-side.
+
+---
