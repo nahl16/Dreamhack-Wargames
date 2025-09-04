@@ -52,6 +52,6 @@ Solution:
 
 After modifying the cookie, the page showed:
 
-Hello admin, flag is DH{...}
+![Description of image](Images/cookie-devtool.png)
 
 ---
