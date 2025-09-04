@@ -1,0 +1,9 @@
+# Dreamhack CTF – file-download-1 (Web)
+
+## Challenge Description
+We are given a simple web challenge called **file-download-1**. The interface allowed us to create memos and later read them back. The challenge hinted at a file-download or path traversal issue.
+
+---
+
+## Recon
+After creating a memo through the web interface, I noticed the URL used to read it looked like this:
