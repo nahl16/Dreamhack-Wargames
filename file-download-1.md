@@ -46,4 +46,6 @@ The web application directly concatenated user input from the `name` query param
 ---
 
 ## Flag
-<CTF FLAG HERE> ```
+```
+DH{...}
+```
