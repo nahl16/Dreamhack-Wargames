@@ -29,3 +29,16 @@ Next, I attempted **path traversal** by prepending `../` to escape the memo dire
 
 
 http://host8.dreamhack.games:8639/read?name=../flag.py
+
+
+This time, the server successfully returned the contents of `flag.py`, which contained the challenge flag.
+
+---
+
+## Root Cause
+The web application directly concatenated user input from the `name` query parameter into a file path without sanitization. This allowed arbitrary file access via `../` sequences (classic **directory traversal vulnerability**).
+
+---
+
+## Flag
+<CTF FLAG HERE> ```
