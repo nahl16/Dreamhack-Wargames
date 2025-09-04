@@ -9,7 +9,7 @@ We are given a simple web challenge called **file-download-1**. The interface al
 After creating a memo through the web interface, I noticed the URL used to read it looked like this:
 http://host8.dreamhack.games:8639/read?name=memo-name
 
-![Description of image](images/file-download-1.png)
+![Description of image](Images/file-download-1.png)
 
 This suggested that the server was reading files from disk based on the `name` parameter.
 
@@ -25,7 +25,7 @@ http://host8.dreamhack.games:8639/read?name=flag.py
 
 The server responded that `flag.py` didn’t exist.
 
-![Description of image](images/file-download-2.png)
+![Description of image](Images/file-download-2.png)
 
 Next, I attempted **path traversal** by prepending `../` to escape the memo directory:
 
@@ -36,7 +36,7 @@ http://host8.dreamhack.games:8639/read?name=../flag.py
 
 This time, the server successfully returned the contents of `flag.py`, which contained the challenge flag.
 
-![Description of image](images/file-download-3.png)
+![Description of image](Images/file-download-3.png)
 
 ---
 
